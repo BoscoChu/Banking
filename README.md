@@ -14,18 +14,14 @@
 
 
 # Video
-<!DOCTYPE html>
-<html>
-<body>
-  
-  <iframe src="https://drive.google.com/file/d/15NoYMTsTP0b0j8ZkGLTwZNYIrGyt32Yr/preview" ></iframe>
-  
-  <!--aloow full screen add tag -->
-  
-<iframe allowfullscreen="allowfullscreen" src="https://drive.google.com/file/d/15NoYMTsTP0b0j8ZkGLTwZNYIrGyt32Yr/preview" ></iframe>
 
-</body>
-</html>
+<iframe width="560" height="315" 
+scrolling="no"
+src="https://sh20raj.github.io/LiveDriveVideoPlayer/?id=15NoYMTsTP0b0j8ZkGLTwZNYIrGyt32Yr/preview" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+          
 
 
 
