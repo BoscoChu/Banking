@@ -1,4 +1,3 @@
---- driveId:15NoYMTsTP0b0j8ZkGLTwZNYIrGyt32Yr/preview ---
 # Banking_sideproject
 
 
@@ -15,7 +14,18 @@
 
 
 # Video
-{% include googleDrivePlayer.html id=page.driveId %}
+<!DOCTYPE html>
+<html>
+<body>
+  
+  <iframe src="https://drive.google.com/file/d/15NoYMTsTP0b0j8ZkGLTwZNYIrGyt32Yr/preview" ></iframe>
+  
+  <!--aloow full screen add tag -->
+  
+<iframe allowfullscreen="allowfullscreen" src="https://drive.google.com/file/d/15NoYMTsTP0b0j8ZkGLTwZNYIrGyt32Yr/preview" ></iframe>
+
+</body>
+</html>
 
 
 
