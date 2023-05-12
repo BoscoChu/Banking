@@ -1,6 +1,4 @@
----
-driveId: 15NoYMTsTP0b0j8ZkGLTwZNYIrGyt32Yr/preview
----
+
 # Banking_sideproject
 
 
@@ -17,6 +15,9 @@ driveId: 15NoYMTsTP0b0j8ZkGLTwZNYIrGyt32Yr/preview
 
 
 # Video
+
+driveId: 15NoYMTsTP0b0j8ZkGLTwZNYIrGyt32Yr/preview
+
 
 {% include googleDrivePlayer.html id=page.driveId %}
 
