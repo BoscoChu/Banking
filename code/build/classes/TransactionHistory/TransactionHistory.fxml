@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.legacy.MFXLegacyTableView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane stylesheets="@../DesignCSS/design.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TransactionHistory.TransactionHistoryController">
+   <content>
+      <AnchorPane id="AnchorPane" prefHeight="506.0" prefWidth="760.0" styleClass="pane" stylesheets="@../DesignCSS/design.css">
+         <children>
+            <TabPane prefHeight="506.0" prefWidth="760.0" stylesheets="@../DesignCSS/design.css" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Withdraw History">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <MFXLegacyTableView fx:id="type_table" prefHeight="478.0" prefWidth="760.0" stylesheets="@../DesignCSS/design.css">
+                                 <columns>
+                                    <TableColumn fx:id="type_accountNo" prefWidth="115.0" text="Account No" />
+                                    <TableColumn fx:id="type_amt" prefWidth="195.0" text="Withdraw Amount" />
+                                    <TableColumn fx:id="type_balance" prefWidth="159.0" text="Remaining Amount" />
+                                    <TableColumn fx:id="type_date" prefWidth="147.0" text="Date" />
+                                    <TableColumn fx:id="type_time" prefWidth="142.0" text="Time" />
+                                 </columns>
+                              </MFXLegacyTableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Deposit History">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <MFXLegacyTableView fx:id="type_table2" prefHeight="478.0" prefWidth="760.0" stylesheets="@../DesignCSS/design.css">
+                                 <columns>
+                                    <TableColumn fx:id="type_accountNo2" prefWidth="130.0" text="Account No" />
+                                    <TableColumn fx:id="type_amt2" prefWidth="180.0" text="Deposit Amount" />
+                                    <TableColumn fx:id="type_balance2" prefWidth="159.0" text="New Amount" />
+                                    <TableColumn fx:id="type_date2" prefWidth="147.0" text="Date" />
+                                    <TableColumn fx:id="type_time2" prefWidth="142.0" text="Time" />
+                                 </columns>
+                              </MFXLegacyTableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Transfer Amount History">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <MFXLegacyTableView fx:id="type_table3" prefHeight="478.0" prefWidth="760.0">
+                                 <columns>
+                                    <TableColumn fx:id="type_accountNo3" prefWidth="115.0" text="Account No" />
+                                    <TableColumn fx:id="type_amt3" prefWidth="195.0" text="Transfer Amount" />
+                                    <TableColumn fx:id="type_balance3" prefWidth="159.0" text="Paid to" />
+                                    <TableColumn fx:id="type_date3" prefWidth="147.0" text="Date" />
+                                    <TableColumn fx:id="type_time3" prefWidth="142.0" text="Time" />
+                                 </columns>
+                              </MFXLegacyTableView>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Money Received History">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <MFXLegacyTableView fx:id="type_table4" prefHeight="478.0" prefWidth="760.0">
+                                 <columns>
+                                    <TableColumn fx:id="type_accountNo4" prefWidth="115.0" text="Account No" />
+                                    <TableColumn fx:id="type_amt4" prefWidth="195.0" text="Amount received" />
+                                    <TableColumn fx:id="type_balance4" prefWidth="159.0" text="Received from" />
+                                    <TableColumn fx:id="type_date4" prefWidth="147.0" text="Date" />
+                                    <TableColumn fx:id="type_time4" prefWidth="142.0" text="Time" />
+                                 </columns>
+                              </MFXLegacyTableView>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Comprehensive History">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <MFXLegacyTableView fx:id="type_table5" prefHeight="478.0" prefWidth="760.0" stylesheets="@../DesignCSS/design.css">
+                                 <columns>
+                                    <TableColumn fx:id="type_accountNo5" prefWidth="126.0" text="Account No" />
+                                    <TableColumn fx:id="type_amt5" minWidth="2.0" prefWidth="131.0" text="Amount " />
+                                    <TableColumn fx:id="type_person5" minWidth="0.0" prefWidth="218.0" text="Description" />
+                                    <TableColumn fx:id="type_date5" prefWidth="116.0" text="Date" />
+                                    <TableColumn fx:id="type_time5" minWidth="0.0" prefWidth="168.0" text="Time" />
+                                 </columns>
+                                 <columnResizePolicy>
+                                 </columnResizePolicy>
+                              </MFXLegacyTableView>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children></AnchorPane>
+   </content>
+</ScrollPane>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AccountInfo.AccountInfoController">
+   <content>
+      <AnchorPane id="AnchorPane" fx:id="account_information" prefHeight="506.0" prefWidth="760.0" style="-fx-background-image: url(&quot;/Images/bg.jpg&quot;);">
+         <children>
+            <Pane layoutY="192.0" prefHeight="210.0" prefWidth="190.0" style="-fx-background-color: a6dbf4;">
+               <children>
+                  <Label prefHeight="45.0" prefWidth="190.0" style="-fx-background-color: #4cbaf1;" text="Account No" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="30.0" />
+                     </font>
+                     <padding>
+                        <Insets left="25.0" />
+                     </padding>
+                  </Label>
+                  <Circle fill="#a6dbf4" layoutX="96.0" layoutY="121.0" radius="60.0" stroke="#4cbaf1" strokeType="INSIDE" strokeWidth="2.0" />
+                  <Label layoutY="185.0" prefHeight="25.0" prefWidth="190.0" style="-fx-background-color: #4cbaf1;" />
+                  <Text fx:id="account_no" fill="WHITE" layoutX="42.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="000000" textAlignment="CENTER" wrappingWidth="108.63671875">
+                     <font>
+                        <Font name="Impact" size="26.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="190.0" layoutY="192.0" prefHeight="210.0" prefWidth="190.0" style="-fx-background-color: #d7ff9a;">
+               <children>
+                  <Label prefHeight="45.0" prefWidth="190.0" style="-fx-background-color: #a8cc72;" text="Gender" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="30.0" />
+                     </font>
+                     <padding>
+                        <Insets left="45.0" />
+                     </padding>
+                  </Label>
+                  <Circle fill="#d7ff9a" layoutX="96.0" layoutY="121.0" radius="60.0" stroke="#a8cc72" strokeType="INSIDE" strokeWidth="2.0" />
+                  <Label layoutY="185.0" prefHeight="25.0" prefWidth="190.0" style="-fx-background-color: #a8cc72;" />
+                  <Text fx:id="gender" fill="WHITE" layoutX="41.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MALE" textAlignment="CENTER" wrappingWidth="108.63671875">
+                     <font>
+                        <Font name="Impact" size="26.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="380.0" layoutY="192.0" prefHeight="210.0" prefWidth="190.0" style="-fx-background-color: #f18393;">
+               <children>
+                  <Label prefHeight="45.0" prefWidth="190.0" style="-fx-background-color: #e9314c;" text="Account Type" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="30.0" />
+                     </font>
+                     <padding>
+                        <Insets left="13.0" />
+                     </padding>
+                  </Label>
+                  <Circle fill="#f18393" layoutX="96.0" layoutY="121.0" radius="60.0" stroke="#e9314c" strokeType="INSIDE" strokeWidth="2.0" />
+                  <Label layoutY="185.0" prefHeight="25.0" prefWidth="190.0" style="-fx-background-color: #e9314c;" />
+                  <Text fx:id="account_type" fill="WHITE" layoutX="41.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current" textAlignment="CENTER" wrappingWidth="108.63671875">
+                     <font>
+                        <Font name="Impact" size="26.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="570.0" layoutY="192.0" prefHeight="210.0" prefWidth="190.0" style="-fx-background-color: #ecde53;">
+               <children>
+                  <Label prefHeight="45.0" prefWidth="190.0" style="-fx-background-color: #b6a608;" text="Nationality" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="30.0" />
+                     </font>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </Label>
+                  <Circle fill="#ecde53" layoutX="96.0" layoutY="121.0" radius="60.0" stroke="#b6a608" strokeType="INSIDE" strokeWidth="2.0" />
+                  <Label layoutY="185.0" prefHeight="25.0" prefWidth="190.0" style="-fx-background-color: #b6a608;" />
+                  <Text fx:id="nationality" fill="WHITE" layoutX="36.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chinese " textAlignment="CENTER" wrappingWidth="120.0">
+                     <font>
+                        <Font name="Impact" size="26.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane prefHeight="100.0" prefWidth="760.0" style="-fx-background-color: #33b9F9;">
+               <children>
+                  <Label layoutX="217.0" layoutY="15.0" text="\$" textFill="WHITE">
+                     <font>
+                        <Font size="52.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="balance" layoutX="248.0" layoutY="19.0" prefHeight="70.0" prefWidth="335.0" text="000000" textFill="WHITE">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="585.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#deposit" prefHeight="33.0" prefWidth="150.0" styleClass="dashboard-button" stylesheets="@../DesignCSS/design.css" text="Deposit">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="585.0" layoutY="52.0" mnemonicParsing="false" onMouseClicked="#withdraw" prefHeight="33.0" prefWidth="150.0" styleClass="dashboard-button" stylesheets="@../DesignCSS/design.css" text="Withdraw">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="11.0" layoutY="8.0" prefHeight="89.0" prefWidth="253.0" text="Balance:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

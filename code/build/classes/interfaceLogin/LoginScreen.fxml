@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaceLogin.LoginScreenController">
+   <children>
+      <Pane fx:id="loginArea" layoutX="350.0" prefHeight="600.0" prefWidth="450.0" styleClass="login-main" stylesheets="@../DesignCSS/design.css">
+         <children>
+            <Label layoutX="33.0" layoutY="56.0" text="Weclome" textFill="#6f6c6c">
+               <font>
+                  <Font name="Impact" size="42.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="118.0" prefHeight="27.0" prefWidth="324.0" text="Login below to access your account">
+               <font>
+                  <Font name="Bodoni MT Italic" size="18.0" />
+               </font>
+            </Label>
+            <MFXTextField fx:id="loginAc" floatingText="Account No" layoutX="61.0" layoutY="182.0" opacity="0.45" prefHeight="30.0" prefWidth="350.0" />
+            <MFXPasswordField fx:id="pin1" floatingText="PIN" layoutX="61.0" layoutY="252.0" opacity="0.45" prefHeight="30.0" prefWidth="350.0" />
+            <FontAwesomeIconView fill="#14445e" glyphName="USER" layoutX="32.0" layoutY="215.0" size="20" />
+            <FontAwesomeIconView fill="#3d6f6e" glyphName="KEY" layoutX="29.0" layoutY="283.0" size="20" />
+            <MFXButton contentDisplay="CENTER" depthLevel="LEVEL3" layoutX="147.0" layoutY="371.0" onMouseClicked="#loginButton" opacity="0.72" prefHeight="45.0" prefWidth="171.0" rippleColor="#b7c92f" styleClass="login-button" stylesheets="@../DesignCSS/design.css" text="Login">
+               <font>
+                  <Font name="Bodoni MT Bold Italic" size="18.0" />
+               </font></MFXButton>
+            <MFXButton contentDisplay="CENTER" depthLevel="LEVEL3" layoutX="106.0" layoutY="492.0" onMouseClicked="#createAccButton" opacity="0.72" prefHeight="53.0" prefWidth="239.0" styleClass="login-button" stylesheets="@../DesignCSS/design.css" text="Create New Account">
+               <rippleColor>
+                  
+               </rippleColor>
+               <font>
+                  <Font name="Bodoni MT Bold Italic" size="16.0" />
+               </font></MFXButton>
+            <Label alignment="CENTER" layoutX="172.0" layoutY="437.0" opacity="0.54" prefHeight="36.0" prefWidth="107.0" text="OR">
+               <font>
+                  <Font name="Bodoni MT Italic" size="27.0" />
+               </font>
+            </Label>
+            <MFXButton layoutX="253.0" layoutY="300.0" onMouseClicked="#forgotButton" prefHeight="36.0" prefWidth="183.0" rippleColor="WHITE" styleClass="login-forgot" stylesheets="@../DesignCSS/design.css" text="Forgot Password?">
+               <font>
+                  <Font name="Bodoni MT Bold" size="13.0" />
+               </font>
+            </MFXButton>
+            <FontAwesomeIconView fill="#14445e" glyphName="DESKTOP" layoutX="176.0" layoutY="401.0" size="18" />
+            <FontAwesomeIconView fill="#14445e" glyphName="USERS" layoutX="121.0" layoutY="524.0" size="18" />
+            <FontAwesomeIconView fill="#14445e" glyphName="CLOSE" layoutX="426.0" layoutY="20.0" onMouseClicked="#closeButton" size="25" styleClass="close-button" wrappingWidth="20.0" />
+
+         </children>
+      </Pane>
+      <Pane prefHeight="600.0" prefWidth="350.0" style="-fx-background-image: url(&quot;/Images/Login_pic.jpg&quot;);" styleClass="login-sidebar" stylesheets="@../DesignCSS/design.css">
+         <children>
+            <ImageView fitHeight="305.0" fitWidth="296.0" layoutX="27.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="37.0" layoutY="328.0" prefHeight="81.0" prefWidth="277.0" text="BOSCO Bank" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="55.0" />
+               </font>
+            </Label>
+            <Label layoutX="102.0" layoutY="402.0" prefHeight="17.0" prefWidth="160.0" text="Client Software" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="102.0" layoutY="563.0" prefHeight="23.0" prefWidth="183.0" text="All Rights Reserved" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

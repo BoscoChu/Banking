@@ -1,0 +1,26 @@
+.dialog{
+  -fx-background-color: linear-gradient(to right, yellow, magenta);
+
+ }
+
+.dialog:header *.header-panel{
+  -fx-background-color: linear-gradient(to right, yellow, magenta);
+
+ }
+ 
+.dialog > *.content.label{
+  -fx-font-size: 20px;
+    -fx-font-weight: bold;
+ }
+ 
+ 
+ .dialog:header *.header-panel *.label{
+  -fx-font-size: 20px;
+  -fx-font-style: italic;
+-fx-fill: #292929;
+ }
+ 
+.dialog> *.button-bar *.button{
+  -fx-pref-width: 120px;
+
+ }

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<?import io.github.palexdev.materialfx.controls.MFXDatePicker?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaceCreateAccount.CreateAccountController">
+   <content>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="450.0" styleClass="login-interfaceCreate" stylesheets="@../DesignCSS/design.css">
+         <children>
+            <FontAwesomeIconView glyphName="ARROW_LEFT" layoutX="14.0" layoutY="33.0" onMouseClicked="#backToLogin" size="25" styleClass="backToLogin-button" />
+            <FontAwesomeIconView glyphName="CLOSE" layoutX="400.0" layoutY="34.0" onMouseClicked="#closeButton" size="30" styleClass="close-button" />
+            <Label layoutX="89.0" layoutY="25.0" prefHeight="38.0" prefWidth="270.0" text="Account Registration">
+               <font>
+                  <Font name="Impact" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="70.0" text="**Please confirm your information carefully to submit your application** " wrapText="true">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="119.0" prefHeight="38.0" prefWidth="270.0" text="Personal Information" textFill="#8a7f7f">
+               <font>
+                  <Font name="Impact" size="30.0" />
+               </font>
+            </Label>
+            <MFXTextField fx:id="Name" alignment="CENTER" floatingText="Accepted Pattern: Letter  or Space or &quot;,&quot; or &quot;-&quot;" layoutX="54.0" layoutY="180.0" prefHeight="38.0" prefWidth="340.0" promptText="Full Name" styleClass="field-decoration" stylesheets="@../DesignCSS/design.css">
+               <font>
+                  <Font name="Bodoni MT" size="15.0" />
+               </font>
+            </MFXTextField>
+            <MFXTextField fx:id="ID" alignment="CENTER" floatingText="Accepted Pattern: Number or Letter " layoutX="54.0" layoutY="250.0" prefHeight="38.0" prefWidth="340.0" promptText="ID Card NO  (without the bracket)" styleClass="field-decoration" stylesheets="@../DesignCSS/design.css">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </MFXTextField>
+            <MFXTextField fx:id="MobileNo" alignment="CENTER" floatingText="Accepted Pattern: Number " layoutX="54.0" layoutY="320.0" prefHeight="38.0" prefWidth="340.0" promptText="Mobile No" styleClass="field-decoration" stylesheets="@../DesignCSS/design.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </MFXTextField>
+            <FontAwesomeIconView fill="#b27c7c" glyphName="USER" layoutX="59.0" layoutY="145.0" size="20" />
+            <FontAwesomeIconView glyphName="BOOK" layoutX="54.0" layoutY="51.0" size="20" wrappingWidth="11.142857551574707" />
+            <MFXComboBox fx:id="Gender" alignment="CENTER" floatingText="                              *Must choose the option*" layoutX="53.0" layoutY="390.0" prefHeight="40.0" prefWidth="339.0" styleClass="field-decoration" stylesheets="@../DesignCSS/design.css" text="Gender">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <textFill>
+                  <Color red="0.5803921818733215" green="0.5058823823928833" blue="0.5058823823928833" opacity="0.8700000047683716" />
+               </textFill>
+            </MFXComboBox>
+            <MFXComboBox fx:id="MartialStatus" alignment="CENTER" floatingText="                              *Must choose the option*" layoutX="34.0" layoutY="450.0" prefHeight="40.0" prefWidth="339.0" styleClass="field-decoration" stylesheets="@../DesignCSS/design.css" text="Martial Status">
+               <textFill>
+                  <Color red="0.5803921818733215" green="0.5058823823928833" blue="0.5058823823928833" opacity="0.8700000047683716" />
+               </textFill>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </MFXComboBox>
+            <MFXDatePicker fx:id="DOB" alignment="CENTER" allowEdit="false" floatMode="INLINE" floatingText="                           *Must choose the option*" layoutX="54.0" layoutY="587.0" prefHeight="38.0" prefWidth="340.0" promptText="Date of Birth" styleClass="field-decoration" stylesheets="@../DesignCSS/design.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </MFXDatePicker>
+            <MFXTextField fx:id="Address" alignment="CENTER" floatingText="Accepted Pattern: Number or Letter  or Space or , - /" layoutX="54.0" layoutY="657.0" prefHeight="38.0" prefWidth="340.0" promptText="Address" styleClass="field-decoration" stylesheets="@../DesignCSS/design.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </MFXTextField>
+            <Label layoutX="96.0" layoutY="743.0" prefHeight="38.0" prefWidth="270.0" text="Account Information" textFill="#8a7f7f">
+               <font>
+                  <Font name="Impact" size="30.0" />
+               </font>
+            </Label>
+            <MFXTextField fx:id="AccountNo" alignment="CENTER" floatingText="Accepted Pattern: 4-15 lengths (number or letter)" layoutX="54.0" layoutY="826.0" prefHeight="40.0" prefWidth="355.0" promptText="Account No" styleClass="field-decoration" stylesheets="@../DesignCSS/design.css">
+               <font>
+                  <Font name="Bodoni MT" size="15.0" />
+               </font>
+            </MFXTextField>
+            <MFXTextField fx:id="Balance" alignment="CENTER" floatingText="Accepted Pattern: number or .(only one dot)" layoutX="58.0" layoutY="1052.0" prefHeight="38.0" prefWidth="340.0" promptText="Balance(Maximun decimal number: 2 digits)" styleClass="field-decoration" stylesheets="@../DesignCSS/design.css">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </MFXTextField>
+            <FontAwesomeIconView fill="#b27c7c" glyphName="MONEY" layoutX="63.0" layoutY="769.0" size="18" />
+            <MFXComboBox fx:id="AccountType" alignment="CENTER" editable="false" floatingText="                               *Must choose the option*" layoutX="54.0" layoutY="990.0" popupOffsetX="3.0" prefHeight="40.0" prefWidth="339.0" scrollOnOpen="true" selectable="true" styleClass="field-decoration" stylesheets="@../DesignCSS/design.css" text="Account Type">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <textFill>
+                  <Color red="0.5803921818733215" green="0.5058823823928833" blue="0.5058823823928833" opacity="0.8700000047683716" />
+               </textFill>
+            </MFXComboBox>
+            <MFXTextField fx:id="PIN" alignment="CENTER" floatingText="Accepted Pattern: 6-20 lengths(number or letter) or .-_" layoutX="41.0" layoutY="923.0" prefHeight="56.0" prefWidth="345.0" promptText="PIN" styleClass="field-decoration" stylesheets="@../DesignCSS/design.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </MFXTextField>
+            <MFXTextField fx:id="Answer" alignment="CENTER" floatingText="Accepted Pattern: Number or Letter or Space" layoutX="61.0" layoutY="1191.0" prefHeight="38.0" prefWidth="340.0" promptText="Answer" styleClass="field-decoration" stylesheets="@../DesignCSS/design.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </MFXTextField>
+            <MFXComboBox fx:id="SecurityQuestion" alignment="CENTER" floatingText="                          *Must choose the option*" layoutX="61.0" layoutY="1124.0" prefHeight="40.0" prefWidth="339.0" styleClass="field-decoration" stylesheets="@../DesignCSS/design.css" text="Security Question">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <textFill>
+                  <Color red="0.5803921818733215" green="0.5058823823928833" blue="0.5058823823928833" opacity="0.8700000047683716" />
+               </textFill>
+            </MFXComboBox>
+            <ImageView fx:id="pic" fitHeight="150.0" fitWidth="150.0" layoutX="51.0" layoutY="1277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/150x150.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="231.0" layoutY="1302.0" text="Profile Picture">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </Label>
+            <MFXButton layoutX="240.0" layoutY="1360.0" onMouseClicked="#uploadPic" prefHeight="45.0" prefWidth="159.0" rippleColor="#34802f" styleClass="login-button" stylesheets="@../DesignCSS/design.css" text="Browse Picture" textFill="#256161" />
+            <MFXButton layoutX="102.0" layoutY="1457.0" onMouseClicked="#creatButton" prefHeight="44.0" prefWidth="233.0" rippleColor="#34802f" styleClass="login-button" stylesheets="@../DesignCSS/design.css" text="Create Account" textFill="#256161" />
+            <FontAwesomeIconView glyphName="UPLOAD" layoutX="257.0" layoutY="1386.0" size="12" />
+            <FontAwesomeIconView glyphName="CHECK" layoutX="145.0" layoutY="1487.0" size="23" />
+            <MFXTextField fx:id="Nationality" alignment="CENTER" floatingText="Accepted Pattern: Letter  or Space " layoutX="54.0" layoutY="517.0" prefHeight="38.0" prefWidth="340.0" promptText="Nationality" styleClass="field-decoration" stylesheets="@../DesignCSS/design.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </MFXTextField>
+            <MFXButton layoutX="153.0" layoutY="781.0" onMouseClicked="#generateAccNo" prefHeight="41.0" prefWidth="170.0" rippleColor="#34802f" styleClass="login-button" stylesheets="@../DesignCSS/design.css" text="Generate Account" textFill="#256161" />
+            <MFXButton layoutX="156.0" layoutY="890.0" onMouseClicked="#generatePIN" prefHeight="27.0" prefWidth="152.0" rippleColor="#34802f" styleClass="login-button" stylesheets="@../DesignCSS/design.css" text="Generate PIN" textFill="#256161" />
+            <FontAwesomeIconView fill="#b27c7c" glyphName="LOCK" layoutX="173.0" layoutY="909.0" size="18" />
+            <FontAwesomeIconView fill="#b27c7c" glyphName="USER" layoutX="168.0" layoutY="807.0" size="18" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
