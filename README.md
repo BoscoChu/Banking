@@ -16,10 +16,7 @@
 
 # Video
 
-driveId: 15NoYMTsTP0b0j8ZkGLTwZNYIrGyt32Yr/preview
 
-
-{% include googleDrivePlayer.html id=page.driveId %}
 
           
 
@@ -30,3 +27,11 @@ driveId: 15NoYMTsTP0b0j8ZkGLTwZNYIrGyt32Yr/preview
 
 # Setup
 https://drive.google.com/file/d/1zrTsawXaKj_caI37y9p8UXxn12nWNMVj/view?usp=sharing
+
+
+## How to Run?
+
+
+
+
+
