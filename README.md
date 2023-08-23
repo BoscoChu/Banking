@@ -16,9 +16,9 @@ A simple banking application for practicing programming skills and MySQL databas
   
   x  Account Vertifaction (Email or Phone) ------preparing 
   
-  x  Rewrite the code (using framework -Spring Boot ) ------preparing(I am learing Spring Boot, Hibernate and spring security )  
+  x  Rewrite the code (using framework -Spring Boot ) 
    
-  x  installation for other operating system(Macos and Linux)   ---plan to finish before 30/06/2023
+  x  installation for other operating system(Macos and Linux)  
   
 # Feature
 * Create the Account 
