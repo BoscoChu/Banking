@@ -7,18 +7,14 @@ A simple banking application for practicing programming skills and MySQL databas
   √  adding the function (Random Password Generator/Random Account Generator) -- 12/05/2023
 
   √  adding the function (Showing transferee's information by searching account No.) -- 23/05/2023
-  
-  x  adding the administrative platform (CRUD the database by GUI-operating)---plan to finish before 15/06/2023
-  
-  x  adding function of interest rate calculator ------preparing 
-  
+    
   x  Generate monthly statement(PDF) ------preparing 
   
   x  Account Vertifaction (Email or Phone) ------preparing 
   
   x  Rewrite the code (using framework -Spring Boot ) 
    
-  x  installation for other operating system(Macos and Linux)  
+
   
 # Feature
 * Create the Account 
