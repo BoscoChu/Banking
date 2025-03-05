@@ -9,10 +9,7 @@ A simple banking application for practicing programming skills and MySQL databas
   √  adding the function (Showing transferee's information by searching account No.) -- 23/05/2023
     
   x  Generate monthly statement(PDF) ------preparing 
-  
-  x  Account Vertifaction (Email or Phone) ------preparing 
-  
-  x  Rewrite the code (using framework -Spring Boot ) 
+   
    
 
   
