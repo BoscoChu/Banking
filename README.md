@@ -125,7 +125,7 @@ A simple banking application (Desktop Application) for practicing programming sk
 # Setup(Windows only)
 https://drive.google.com/file/d/1zrTsawXaKj_caI37y9p8UXxn12nWNMVj/view?usp=sharing
 
-*windows only I am preparing updated installation for other operating system(Macos and Linux)
+*windows and Linux only
 
 ## How to Run?
 To run the application you need to setup the exe file(windows) or just clone the project.
