@@ -1,4 +1,5 @@
 ![image](https://github.com/user-attachments/assets/0ffda237-8504-4a7f-9021-e0f42b50be41)
+
 # Banking_sideproject
 A simple banking application (Desktop Application) for practicing programming skills and MySQL database.
 
@@ -24,15 +25,14 @@ A simple banking application (Desktop Application) for practicing programming sk
 * Change Password
 
 ## Front-End
-
  * JAVAFX
- * * CSS
+ *  CSS
 
 ## Back-End
  * JAVA
 
-### Database
-* Mysql
+## Database
+ * Mysql
 
 
 
